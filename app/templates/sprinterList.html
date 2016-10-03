@@ -1,0 +1,6 @@
+<h1>Sprinter List</h1>
+<div class="list-group" ng-repeat="sprinter in sprinters">
+	<a class="list-group-item" href="#/sprinter/{{ sprinter.sprinterId }}" ng-click="selectSprinter(sprinter)">
+    	<h4 class="list-group-item-heading">{{ sprinter.name }}</h4>
+  	</a>
+</div>

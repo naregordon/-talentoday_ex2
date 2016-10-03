@@ -1,0 +1,24 @@
+{
+  "sprinters": [
+    {
+      "sprinterId": "1",
+      "name": "John Doe"
+    },
+    {
+      "sprinterId": "2",
+      "name": "James Doe"
+    },
+    {
+      "sprinterId": "3",
+      "name": "Jim Doe"
+    },
+    {
+      "sprinterId": "4",
+      "name": "Jamy Doe"
+    },
+    {
+      "sprinterId": "5",
+      "name": "Jojo Doe"
+    }
+  ]
+}

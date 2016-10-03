@@ -1,0 +1,41 @@
+<h2>{{ sprinterName }}</h2>
+
+<div class="panel panel-default">
+  <div class="panel-heading">Birthdate</div>
+  <div class="panel-body">
+    <span ng-hide="birthdate.isEditMode">{{sprinterInfo.birthdate}}</span>
+    <input type="text" ng-show="birthdate.isEditMode" value="{{sprinterInfo.birthdate}}" ng-model="sprinterInfo.birthdate">
+    <button type="button" class="btn btn-primary pull-right" ng-hide="birthdate.isEditMode" ng-click="birthdate.isEditMode = true">Edit</button>
+    <button type="button" class="btn btn-success pull-right" ng-show="birthdate.isEditMode" ng-click="birthdate.isEditMode = false">Save</button>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">Address</div>
+  <div class="panel-body">
+    <span ng-hide="address.isEditMode">{{sprinterInfo.address}}</span>
+    <input type="text" ng-show="address.isEditMode" value="{{sprinterInfo.address}}" ng-model="sprinterInfo.address">
+    <button type="button" class="btn btn-primary pull-right" ng-hide="address.isEditMode" ng-click="address.isEditMode = true">Edit</button>
+    <button type="button" class="btn btn-success pull-right" ng-show="address.isEditMode" ng-click="address.isEditMode = false">Save</button>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">Phone number</div>
+  <div class="panel-body">
+    <span ng-hide="phone.isEditMode">{{sprinterInfo.phone}}</span>
+    <input type="text" ng-show="phone.isEditMode" value="{{sprinterInfo.phone}}" ng-model="sprinterInfo.phone">
+    <button type="button" class="btn btn-primary pull-right" ng-hide="phone.isEditMode" ng-click="phone.isEditMode = true">Edit</button>
+    <button type="button" class="btn btn-success pull-right" ng-show="phone.isEditMode" ng-click="phone.isEditMode = false">Save</button>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">Description</div>
+  <div class="panel-body">
+    <span ng-hide="desc.isEditMode">{{sprinterInfo.desc}}</span>
+    <textarea type="text" ng-show="desc.isEditMode" ng-model="sprinterInfo.desc">{{sprinterInfo.desc}}</textarea>
+    <button type="button" class="btn btn-primary pull-right" ng-hide="desc.isEditMode" ng-click="desc.isEditMode = true">Edit</button>
+    <button type="button" class="btn btn-success pull-right" ng-show="desc.isEditMode" ng-click="desc.isEditMode = false">Save</button>
+  </div>
+</div>
