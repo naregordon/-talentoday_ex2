@@ -1,1 +1,1 @@
-var App = angular.module('App', ['ngRoute', 'facebook']);
+var SprinterApp = angular.module('SprinterApp', ['ngRoute']);
